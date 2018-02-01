@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Layout from '../layout'
 import InputForm from '../input'
 import { Button } from 'reactstrap';
 import './index.css';
