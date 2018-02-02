@@ -1,9 +1,8 @@
-import React from 'react';
-import './index.css';
+import React from 'react'
 
-class Layout extends React.Component{
-  render(){
-    return(
+class Layout extends React.Component {
+  render() {
+    return (
       <header className="My-header">
         <h1 className="My-title">My Forms</h1>
       </header>
@@ -11,4 +10,4 @@ class Layout extends React.Component{
   }
 }
 
-export default Layout;
+export default Layout

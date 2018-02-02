@@ -1,42 +1,42 @@
-import React from 'react';
-import { Button, Input } from 'reactstrap';
-import './index.css';
+import React from 'react'
+import { Button, Input } from 'reactstrap'
 
-class MyForm extends React.Component{
-
+class MyForm extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      name: "",
-      firstName: ""
-    };
+      name: '',
+      firstName: '',
+    }
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.name);
-    event.preventDefault();
+    alert('A name was submitted: ' + this.state.name)
+    event.preventDefault()
   }
 
   handleChange(event) {
-    this.setState({[event.target.name]: event.target.value});
+    this.setState({ [event.target.name]: event.target.value })
   }
 
-  render(){
-    return(
-    <div className="MyForm">
+  render() {
+    return (
+      <div className="MyForm">
         <div className="Form">
           <form className="form-group" onSubmit={this.handleSubmit}>
-            <Input name="name" value={this.state.name} placeholder="Nom" onChange={this.handleChange}/>
-            <Input name="firstName" value={this.state.firstName} placeholder="Prénom" onChange={this.handleChange}/>
-            <Button color="secondary" type="submit">Valider</Button>
+            <Input name="name" value={this.state.name} placeholder="Nom" onChange={this.handleChange} />
+            <Input name="firstName" value={this.state.firstName} placeholder="Prénom" onChange={this.handleChange} />
+            <Button color="secondary" type="submit">
+              Valider
+            </Button>
           </form>
         </div>
-    </div>
+      </div>
     )
   }
 }
 
-export default MyForm;
+export default MyForm
