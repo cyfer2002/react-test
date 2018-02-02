@@ -1,6 +1,7 @@
 .MyForm{
   margin: 50px auto;
   max-width: 600px;
+  position: relative;
 }
 
 .Form{
@@ -11,6 +12,4 @@
   padding: 0px;
   margin-top: 0px;
 }
-.container {
-  position: relative;
-}
+
